@@ -29,10 +29,11 @@ while ( cognomeDaAggiungere.length == 0 ){
 // push del cognome nell'array
 arrayCognomi.push(cognomeDaAggiungere)
 
+// per ordinare il contenuto dell'array alfabeticamente
+arrayCognomi.sort()
+
 // per inserire gli elementi dell'array dentro una lista html
-for( var i = 0 ; i < arrayCognomi.length; i++ ) {
-    // per ordinare il contenuto dell'array alfabeticamente
-    arrayCognomi.sort();
+for( var i = 0 ; i < arrayCognomi.length; i++ ) {;
     document.getElementById('lista').innerHTML += '<li>' + arrayCognomi[i] + '</li>';
     console.log(i);
 }
